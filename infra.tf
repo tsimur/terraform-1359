@@ -92,15 +92,15 @@ resource "aws_lb_target_group_attachment" "web" {
   count = 2
 }
 
-# resource "aws_lb" "test" {
-#   name               = "websites_nlb"
-#   internal           = false
-#   load_balancer_type = "network"
-#   subnets            = [for subnet in aws_subnet.public : subnet.id]
+resource "aws_lb" "test" {
+  name               = "websites_nlb"
+  internal           = false
+  load_balancer_type = "network"
+  subnets            = [for subnet in aws_subnet.public : subnet.id]
 
-#   enable_deletion_protection = true
+  enable_deletion_protection = true
 
-#   tags = {
-#     Environment = "production"
-#   }
-# }
+  tags = {
+    Environment = "production"
+  }
+}

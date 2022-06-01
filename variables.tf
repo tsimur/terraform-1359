@@ -20,7 +20,7 @@ variable "public_subnates_ips" {
 
 variable "av_zone_ids" {
   type = list
-  default = ["use1-az3", "use1-az4"]  
+  default = ["usw1-az1", "usw1-az3"]  
 }
 
 variable "ec2_names" {

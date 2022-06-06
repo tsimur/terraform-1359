@@ -1,0 +1,4 @@
+resource "aws_key_pair" "deployer" {
+  key_name   = "deployer-key"
+  public_key = "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQDRN6+BlNKjcJYNXd5/IbyYjdLXV9WO31tORk6XxHy7nBoL1O9euSUcBfQQgyi6+vYLoPsWi0mV3kPOP6X394AKJY7/gqQI8YEo/3Y74Udih/jhQEoHipjyNZ0g/2/OuZb4v4mCieUGCR/UGu1hCRL7s0lkRs2weiWqMkNeo/D5Xejg90BVkpM8LbVIF4Cc29kHd3POp0zUjKFcT2BV5fKHbZwJpCzroc3rwXx1YflrGNThomgd4TLOz5NjYqImwec0L8VGNrjZ/3Ylqr5AAxrfg+vWk22DcK30kBWWgR3kh/2gUNVRQLl258FXu9se8U10gKS/gJ+EzYSt+pX7ymnt5LxUGUjCNGCksLKHNG/V3Zgtr+o/OStix7dEOr1t3h9rGgbf1q5xgQcyDHjduT5LGvwlk4xjeYw3pteWtww3XzNWUzW9zaOsIEwOKZ0QeIkfaDQNIp4sLhgwWlbzUpy/B1n4I1eZjOw3fK6ESvnYUP83VT27hffvXEftOKb9CfE= tmindarov@CMDB-78932"
+}

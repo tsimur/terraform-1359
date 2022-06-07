@@ -9,3 +9,11 @@ resource "aws_lb" "web_balancer" {
     Environment = "two_websites"
   }
 }
+
+data "aws_lb" "test" {
+  arn = aws_lb.web_balancer.arn
+}
+
+output "loadbalancer_dns_name" {
+  value = data.aws_lb.test.dns_name
+}

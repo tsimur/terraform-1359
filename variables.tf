@@ -1,3 +1,7 @@
+ variable "region" {
+   type = string
+   default = "us-west-2"
+ }
 variable "private_subnates_names" {
   type = list
   default = ["private_subnet_north", "private_subnet_south"]  
@@ -18,12 +22,17 @@ variable "public_subnates_ips" {
   default = ["10.0.3.0/24", "10.0.4.0/24"]  
 }
 
-variable "av_zone_ids" {
-  type = list
-  default = ["usw1-az1", "usw1-az3"]  
-}
-
 variable "ec2_names" {
   type = list
   default = ["website_north", "website_south"]  
 }
+
+ variable "ami_owner" {
+   type = list
+   default = ["099720109477"]
+ }
+
+ variable "os_image" {
+   type = list
+   default = ["ubuntu/images/hvm-ssd/ubuntu-jammy-22.04-amd64-server-20220420"]
+ }
